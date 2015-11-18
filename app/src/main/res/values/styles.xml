@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <color name="background_dark">#CC333333</color>
+    <color name="divider">#CCCCCC</color>
+    <color name="background_grey">#666666</color>
+    <color name="button_red">#FF6600</color>
+</resources>

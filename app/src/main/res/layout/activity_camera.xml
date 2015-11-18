@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity"
+    android:background="@color/background_grey">
+
+    <FrameLayout
+        android:id="@+id/video_local"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_large"
+        android:background="@color/background_dark"
+        >
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="@dimen/stat_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/padding_large">
+
+            <ImageButton
+                android:id="@+id/button_swap_camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera_rear_white_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/button_stop_start_camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_videocam_off_white_24dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+            <!-- Surface size -->
+            <LinearLayout
+                android:layout_width="@dimen/stat_width"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_surface_size_label"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/stats_surface_size_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/stats_default" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider"/>
+            <!-- Surface size -->
+            <LinearLayout
+                android:layout_width="@dimen/stat_width"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_optimal_resolution_label"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/stats_optimal_resolution_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/stats_default" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider"/>
+            <!-- Frame rate range -->
+            <LinearLayout
+                android:layout_width="@dimen/stat_width"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_framerate_range_label"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/stats_framerate_range_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/stats_default" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/divider"/>
+            <!-- Orientation -->
+            <LinearLayout
+                android:layout_width="@dimen/stat_width"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_orientation_label"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/stats_orientation_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/stats_default" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

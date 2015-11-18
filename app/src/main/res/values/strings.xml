@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test Camera</string>
+    <string name="stats_default">...</string>
+    <string name="stats_surface_size_label">Surface size:</string>
+    <string name="stats_optimal_resolution_label">Optimal resolution:</string>
+    <string name="stats_framerate_range_label">Frame rate range (per second):</string>
+    <string name="stats_orientation_label">Orientation (degrees):</string>
+</resources>
